@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img width="100" src="/assects/logo2.png" alt="Food Website Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Resturants</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-primary mr-2 login" href="../login/login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-success signup" href="../register/register.html">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row justify-content-center align-items-center mt-4">
+        <div class="col-8">
+            <div class="menu-header">
+                <h1>RESTAURANT MENU</h1>
+                <div class="btn-group">
+                  <button type="button" class="btn signup">MAINS MENU</button>
+                  <!-- <button type="button" class="btn btn-outline-danger">DESSERTS</button> -->
+                </div>
+              </div>
+          
+              <div class="menu-section">
+                <h3>Mains Menu</h3>
+          
+                <div class="menu-item">
+                  <img src="../assects/roast.jpg" alt="Roast Duck">
+                  <div class="menu-info">
+                    <h4>ROAST DUCK</h4>
+                    <p>Roast Duck and Barbecue Pork Served with Steamed Rice</p>
+                  </div>
+                  <div class="menu-price">$13.50</div>
+                  <button class="add-to-cart-btn ">Add to Cart</button>
+                </div>
+          
+                <div class="menu-item">
+                  <img src="../assects/sui.jpg" alt="Siu Mai">
+                  <div class="menu-info">
+                    <h4>SIU MAI</h4>
+                    <p>Crispy Shredded Smoked Chicken with Ginger and Spring Onion</p>
+                  </div>
+                  <div class="menu-price ">$9.50</div>
+                  <button class="add-to-cart-btn ">Add to Cart</button>
+                </div>
+          
+                <div class="menu-item">
+                  <img src="../assects/sea salad.jpg" alt="Seafood Salad">
+                  <div class="menu-info">
+                    <h4>SEAFOOD SALAD</h4>
+                    <p>Stewed Seafood with Dried Beancurd Served with Preserved Vegetable</p>
+                  </div>
+                  <div class="menu-price ">$8.50</div>
+                  <button class="add-to-cart-btn ">Add to Cart</button>
+                </div>
+                
+                <!-- Add more menu items as needed -->
+                
+              </div>
+      </div>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

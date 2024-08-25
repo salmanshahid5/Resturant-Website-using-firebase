@@ -1,0 +1,63 @@
+nav {
+  box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3), 0 4px 8px rgba(60, 64, 67, 0.15) !important;
+}
+.navbar {
+  background-color: #f8f9fa;
+  height: 80px;
+}
+.navbar-brand img {
+  max-height: 50px;
+}
+.login {
+  background-color: #37b100 !important;
+  color: white !important;
+  border: none ;
+  /* border-color: #007bff !important; */
+}
+.login:hover {
+  background-color: #2f8b00 !important;
+  border-color: #007bff !important;
+}
+.signup {
+  background-color: #f79417 !important;
+  color: white !important;
+  /* border-color: #007bff !important; */
+  border: none ;
+}
+.signup:hover {
+  background-color: #e68315 !important;
+  border-color: #007bff !important;
+}
+.carousel-caption {
+  bottom: 20%;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+.carousel-item img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+.carousel-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.carousel-caption p {
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+.section {
+  padding: 60px 0;
+}
+.section h2 {
+  margin-bottom: 30px;
+}
+
