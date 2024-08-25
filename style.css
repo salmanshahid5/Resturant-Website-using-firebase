@@ -61,3 +61,19 @@ nav {
   margin-bottom: 30px;
 }
 
+.slected-logo{
+  display: none;
+}
+.spinner-border{
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+}
+#submit-restaurant{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+#restaurant-spinner{
+  display: none;
+}
