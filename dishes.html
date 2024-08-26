@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img width="100" src="./assects/logo2.png" alt="Food Website Logo" style="height: 50px; width: auto;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./menu/menu.html">Restaurants</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-primary mr-2 login" href="./login/login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-success signup" href="./register/register.html">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="main-content" class="container">
+        <div class="row px-2 py-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <div class="mb-4">
+                                    <img
+                                        id="res-image"
+                                        width="200"
+                                        src="https://www.xbytesolutions.com/assets/img/food-delivery-app/hero-screen.png"
+                                        alt="Restaurant Image"
+                                    />
+                                </div>
+                                <h5 class="card-title" id="res-name">Saylani Foods</h5>
+                                <p class="card-text" id="res-address">Sample Address Here</p>
+                                <div class="d-flex flex-wrap">
+                                    <span class="badge badge-primary m-1">Biryani</span>
+                                    <span class="badge badge-primary m-1">Kebab</span>
+                                    <span class="badge badge-primary m-1">Pizza</span>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-4 social-icons">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row px-2 py-4">
+            <div id="all-dishes" class="col-8">
+                <!-- Dishes content here -->
+            </div>
+            <div class="col-4">
+                <div class="card text-center">
+                    <div class="card-header text-bold font-weight-bold">
+                        <b>Cart</b>
+                    </div>
+                    <div id="cart" class="card-body">
+                        <!-- Cart items here -->
+                    </div>
+                    <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-toggle="modal"
+                        data-target="#exampleModal">
+                        Checkout
+                    </button>
+                    <!-- Modal -->
+                    <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Checkout</h5>
+                                    <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-start">
+                                    <div class="mb-3">
+                                        <label for="customerName" class="form-label">Name</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="customerName"
+                                            placeholder="Enter your name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="customerContact" class="form-label">Contact Number</label>
+                                        <input
+                                            type="number"
+                                            class="form-control"
+                                            id="customerContact"
+                                            placeholder="Enter contact number">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="customerAddress" class="form-label">Address</label>
+                                        <textarea
+                                            class="form-control"
+                                            id="customerAddress"
+                                            rows="3"
+                                            placeholder="Enter your address"></textarea>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <span>Delivery charges:</span>
+                                        <span class="fw-bold">Rs 100 /-</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <span>Total amount:</span>
+                                        <span class="fw-bold" id="totalAmount">Rs 343</span>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button
+                                        id="closeBtn"
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        data-dismiss="modal">
+                                        Close
+                                    </button>
+                                    <button id="placeOrder" class="btn btn-primary">
+                                        Place order
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -100,3 +100,9 @@ nav {
   background-color: #e68315 !important;
   border-color: #007bff !important;
 }
+.card-img-top{
+  width: 100% !important;
+  height: 200px;
+  object-fit: cover ;
+  border-radius: 10px;
+}
