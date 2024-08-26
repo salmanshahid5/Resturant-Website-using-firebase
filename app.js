@@ -1,4 +1,10 @@
-import { auth, signInWithEmailAndPassword } from "./firebase.js";
+import {
+  auth,
+  signInWithEmailAndPassword,
+  collection,
+  db,
+  getDocs,
+} from "./firebase.js";
 
 const login = () => {
   const email = document.getElementById("email");
@@ -9,8 +15,8 @@ const login = () => {
       console.log(user);
       if (user.email == "admin@gmail.com") {
         location.href = "../dashboard.html";
-        email.value = '';
-        password.value = '';
+        email.value = "";
+        password.value = "";
       } else {
         alert("You do not have permission to access this page.");
       }
@@ -24,3 +30,26 @@ const login = () => {
 
 const loginbtn = document.getElementById("loginbtn");
 loginbtn && loginbtn.addEventListener("click", login);
+
+// <------------- get resturants from firestore------------>
+
+const getResturants = async () => {
+  const q = collection(db, "resturants");
+  const resList = document.getElementById("res-list");
+  resList.innerHTML = "";
+  const querySnapshot = await getDocs(q);
+  let index = 0;
+  querySnapshot.forEach((doc) => {
+    console.log(doc.id, " => ", doc.data());
+    index++;
+    resList.innerHTML += `<tr>
+                        <th scope="col">${index}</th>
+                        <th scope="col"> <img class='res-logo' src="${
+                          doc.data().image
+                        }" alt=""></th>
+                        <th scope="col">${doc.data().name}</th>
+                        <th scope="col">${doc.data().address}</th>
+                    </tr>`;
+  });
+};
+getResturants();

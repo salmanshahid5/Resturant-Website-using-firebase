@@ -11,7 +11,7 @@ nav {
 .login {
   background-color: #37b100 !important;
   color: white !important;
-  border-color: #007bff !important;
+  border: none;
 }
 .login:hover {
   background-color: #2f8b00 !important;
@@ -20,7 +20,7 @@ nav {
 .signup {
   background-color: #f79417 !important;
   color: white !important;
-  border-color: #007bff !important;
+  border: none;
 }
 .signup:hover {
   background-color: #e68315 !important;

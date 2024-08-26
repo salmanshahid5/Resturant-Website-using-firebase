@@ -16,16 +16,17 @@ import {
   getFirestore,
   collection,
   addDoc,
+  getDocs,
 } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore.js";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC-O_FRKRgj2FOzl352w2xmGQjDd4AsY4o",
-  authDomain: "foodpanda-a93a3.firebaseapp.com",
-  projectId: "foodpanda-a93a3",
-  storageBucket: "foodpanda-a93a3.appspot.com",
-  messagingSenderId: "819348422008",
-  appId: "1:819348422008:web:3b2be8ebaa7107d0189c8d",
+  apiKey: "AIzaSyBiJGQSA9ik7mribyLBjMKW5q0T_2grqLA",
+  authDomain: "food-panda-2.firebaseapp.com",
+  projectId: "food-panda-2",
+  storageBucket: "food-panda-2.appspot.com",
+  messagingSenderId: "1067346731195",
+  appId: "1:1067346731195:web:7ca623b3750b7f7968499e"
 };
 
 // Initialize Firebase
@@ -42,8 +43,8 @@ export {
   ref,
   uploadBytesResumable,
   getDownloadURL,
-  getFirestore,
   db,
   collection,
   addDoc,
+  getDocs,
 };
