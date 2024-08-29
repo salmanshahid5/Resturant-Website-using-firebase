@@ -55,8 +55,7 @@ const getResturants = async () => {
                               <span class="badge login">Karahi</span>
                               <span class="badge login">Drinks</span>
                           </p>
-                          <a href="../dishes.html?restaurant=${doc.id
-                }" class="btn signup">View all dishes</a>
+                          <a href="../dishes.html?restaurant=${doc.id}" class="btn signup">View all dishes</a>
                       </div>
                   </div>
                    </div>`

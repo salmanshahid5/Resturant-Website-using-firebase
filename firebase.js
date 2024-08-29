@@ -3,6 +3,7 @@ import {
   getAuth,
   signInWithEmailAndPassword,
   onAuthStateChanged,
+  signOut,
 } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-auth.js";
 
 import {
@@ -17,6 +18,12 @@ import {
   collection,
   addDoc,
   getDocs,
+  where,
+  query,
+  getDoc,
+  doc,
+  updateDoc,
+  serverTimestamp,
 } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore.js";
 
 
@@ -47,4 +54,11 @@ export {
   collection,
   addDoc,
   getDocs,
+  where,
+  query,
+  getDoc,
+  doc,
+  serverTimestamp,
+  updateDoc,
+  signOut,
 };

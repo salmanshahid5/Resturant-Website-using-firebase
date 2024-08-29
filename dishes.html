@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img width="100" src="./assects/logo2.png" alt="Food Website Logo" style="height: 50px; width: auto;">
+            <img width="150" src="./assects/new.png" alt="Food Website Logo" style="height: 50px; width: auto;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./menu/menu.html">Restaurants</a>
@@ -46,31 +46,31 @@
     <div id="main-content" class="container">
         <div class="row px-2 py-4">
             <div class="col">
-                <div class="card">
-                    <div class="card-body">
+                <div class="card card1">
+                    <div class="card-body cardbody">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
                                 <div class="mb-4">
                                     <img
                                         id="res-image"
                                         width="200"
-                                        src="https://www.xbytesolutions.com/assets/img/food-delivery-app/hero-screen.png"
+                                        src=""
                                         alt="Restaurant Image"
                                     />
                                 </div>
-                                <h5 class="card-title" id="res-name">Saylani Foods</h5>
-                                <p class="card-text" id="res-address">Sample Address Here</p>
+                                <h5 class="card-title tittle" id="res-name">Saylani Foods</h5>
+                                <p class="card-text text1" id="res-address">Sample Address Here</p>
                                 <div class="d-flex flex-wrap">
                                     <span class="badge badge-primary m-1">Biryani</span>
                                     <span class="badge badge-primary m-1">Kebab</span>
                                     <span class="badge badge-primary m-1">Pizza</span>
                                 </div>
                             </div>
-                            <div class="d-flex gap-4 social-icons">
+                            <!-- <div class="d-flex gap-4 social-icons">
                                 <i class="fa-brands fa-facebook"></i>
                                 <i class="fa-brands fa-instagram"></i>
                                 <i class="fa-brands fa-youtube"></i>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -168,6 +168,10 @@
             </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="dishes.js" type="module"></script>
+    <script src="order.js" type="module"></script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

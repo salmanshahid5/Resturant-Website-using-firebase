@@ -1,4 +1,4 @@
-import { auth, onAuthStateChanged } from "./firebase.js";
+import { auth, onAuthStateChanged,signOut} from "./firebase.js";
 
 onAuthStateChanged(auth, (user) => {
     if (user) {
@@ -11,3 +11,18 @@ onAuthStateChanged(auth, (user) => {
         location.href = '../login/login.html';
     }
   });
+
+  document.getElementById('logout')
+  .addEventListener("click", () => {
+    signOut(auth)
+      .then(() => {
+        console.log("User logged out successfully.");
+        alert("You have been logged out.");
+        window.location.href = "index.html"; 
+      })
+      .catch((error) => {
+        // An error happened.
+        console.error("Error logging out:", error);
+        alert("Error logging out. Please try again.");
+      });
+  });;

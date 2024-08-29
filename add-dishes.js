@@ -107,7 +107,7 @@ const getDishes = async () => {
   let index = 0;
   let dishes = [];
 
-  allDishes.innerHTML = ``; 
+  allDishes.innerHTML = ``;  
 
   querySnapshot.forEach((doc) => {
     const data = doc.data();
